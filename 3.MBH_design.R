@@ -178,6 +178,10 @@ plot(zones$both, add=T)
 plot(remaining.sites, col=remaining.sites$zone, pch = 20, add=T) # 41
 remaining.sites$zone
 
+# Give unique id to points ----
+uniqueID <- paste0(1:50)
+remaining.sites$ID <- uniqueID
+
 ## Save --
 site <- "Jurien"
 design <- "50Boss"
